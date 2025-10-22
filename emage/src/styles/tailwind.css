@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Global Text Colors */
+    --text-primary: #000000;
+    --text-secondary: #1a1a1a;
+    --text-white: #ffffff;
+
+    /* Global Background Colors */
+    --bg-primary: #ec744a;
+    --bg-secondary: #fcf8f4;
+    --bg-white: #ffffff;
+
+    /* Global Border Colors */
+    --border-primary: #000000;
+    --border-white: #ffffff;
+
+    /* Component Colors - Header */
+    --header-text: #1a1a1a;
+    --header-text-alt: #ffffff;
+
+    /* Component Colors - Button */
+    --button-bg: #ec744a;
+    --button-text: #ffffff;
+
+    /* Component Colors - Link */
+    --link-text: #ffffff;
+
+    /* Component Colors - Input */
+    --input-text: #ffffff;
+    --input-border: #ffffff;
+
+    /* Component Colors - Expandable List */
+    --expand-text: #000000;
+
+    /* Typography Variables */
+    --font-size-base: 18px;
+    --font-size-lg: 22px;
+    --font-size-xl: 28px;
+    --font-size-2xl: 35px;
+    --font-size-3xl: 43px;
+    --font-size-4xl: 54px;
+    --font-size-5xl: 68px;
+
+    /* Font Weight Variables */
+    --font-weight-normal: 400;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+
+    /* Line Height Variables */
+    --line-height-tight: 27px;
+    --line-height-normal: 31px;
+    --line-height-relaxed: 39px;
+    --line-height-loose: 47px;
+
+    /* Spacing Variables - Margin */
+    --margin-xs: 4px;
+    --margin-sm: 8px;
+    --margin-md: 16px;
+    --margin-lg: 24px;
+    --margin-xl: 48px;
+    --margin-2xl: 80px;
+    --margin-3xl: 100px;
+
+    /* Spacing Variables - Padding */
+    --padding-xs: 4px;
+    --padding-sm: 8px;
+    --padding-md: 16px;
+    --padding-lg: 20px;
+    --padding-xl: 32px;
+    --padding-2xl: 56px;
+    --padding-3xl: 80px;
+
+    /* Spacing Variables - Gap */
+    --gap-xs: 4px;
+    --gap-sm: 10px;
+    --gap-md: 16px;
+    --gap-lg: 24px;
+    --gap-xl: 48px;
+    --gap-2xl: 80px;
+
+    /* Border Radius Variables */
+    --radius-none: 0px;
+    --radius-sm: 14px;
+    --radius-md: 24px;
+    --radius-lg: 30px;
+    --radius-xl: 34px;
+    --radius-full: 74px;
+
+    /* Border Width Variables */
+    --border-thin: 1px;
+    --border-thick: 2px;
+
+    /* Layout Variables - Width */
+    --width-auto: auto;
+    --width-full: 100%;
+    --width-flex: flex-1;
+    --width-sm: 160px;
+    --width-md: 190px;
+    --width-lg: 360px;
+
+    /* Layout Variables - Height */
+    --height-auto: auto;
+    --height-flex: flex-1;
+  }
+}
