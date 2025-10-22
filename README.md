@@ -1,73 +1,16 @@
-# EMAGE – Emotional Awareness and Guided Expression (MVP)
+# React + Vite
 
-Project Title: EMAGE – Emotional Awareness and Guided Expression
-Team: Paul Karime, Roy Mwenda, Angel Lucy, Bettson Kiptoo
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Frontend: React + Tailwind CSS
-Backend: Flask-RESTful API
-Database: PostgreSQL
-Deployment: Vercel (Frontend), Render (Backend)
+Currently, two official plugins are available:
 
-## 1. Overview
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-In today’s fast-paced world, many individuals struggle with self-awareness and mental well-being. EMAGE (Emotional Awareness and Guided Expression) is designed to help users pause, reflect, and understand their emotional patterns through daily mood tracking, guided reflections, and private journaling.
+## React Compiler
 
-The system aims to provide a simple, private, and accessible digital space for emotional check-ins, while laying a solid foundation for future expansion into therapy connections and behavioral analysis.
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## 2. Problem Statement
+## Expanding the ESLint configuration
 
-Millions of people silently deal with depression, anxiety, stress, and addictive behaviors without access to immediate support or reflection tools. Existing mental health solutions are often complex, expensive, or lack personalization.
-
-EMAGE seeks to solve this by creating an easy-to-use web platform where users can log their moods, write personal reflections, chat with buddies in the community, and optionally connect with mental health professionals.
-
-## 3. MVP Objectives
-
-- Help users build a daily self-awareness habit through mood tracking and guided reflections.
-- Create a community portal to help users meet people facing similar issues.
-- Store and visualize users' mood patterns to help identify emotional trends.
-- Offer a basic channel for connecting users with certified therapists.
-- Implement a scalable, modular full-stack architecture following modern best practices.
-
-## 4. Core Features
-
-See full spec in the project planning document. Main features include authentication, mood logging, guided reflections, private journaling, community features, therapist directory, and a personalized dashboard.
-
-## 5. System Architecture
-
-Frontend: React + Tailwind CSS, React Router v6, React Hook Form, Axios.
-
-Backend: Flask-RESTful, SQLAlchemy, Marshmallow, flask-jwt-extended, Cloudinary, SendGrid, Swagger/OpenAPI.
-
-Database: PostgreSQL.
-
-## 6. Database Design
-
-Main entities: Users, Moods, Reflections, Notes, Therapists, ChatSessions. Relationships follow standard one-to-many patterns.
-
-## 7. API Documentation
-
-Document endpoints using Swagger. Example endpoints:
-
-- POST /auth/register
-- POST /auth/login
-- GET /moods?page=1
-- POST /moods
-- GET /reflections
-- POST /notes
-- GET /therapists
-
-## 8. Deployment Plan
-
-Frontend: Vercel or Netlify. Backend: Render or Railway. Database: Render managed Postgres or Supabase.
-
-## 9. Timeline & Deliverables
-
-See full spec in the project planning document for weekly milestones.
-
-## 10. Contributing
-
-Follow the Gitflow workflow. Create feature branches from `develop`, open PRs to `develop`, and merge to `main` when ready.
-
----
-
-For a full spec and more detailed requirements, see the project planning notes and JIRA board in the team workspace.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
