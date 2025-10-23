@@ -1,5 +1,5 @@
 import React from 'react';
-import Globalization from './Globalization-amico-1.svg';
+import Globalization from '../../assets/Globalization-amico-1.svg';
 
 const DiscoverSection = () => {
   return (

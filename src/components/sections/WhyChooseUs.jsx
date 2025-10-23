@@ -1,6 +1,6 @@
 import React from 'react';
-import { Award, Users, TrendingUp } from 'lucide-react';
-import FeatureCard from '../cards/FeatureCard';
+// import { Award, Users, TrendingUp } from 'lucide-react';
+// import FeatureCard from '../cards/FeatureCard';
 
 const WhyChooseUs = () => {
   return (
