@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import FAQItem from '../cards/FAQItem';
+// import FAQItem from '../cards/FAQItem';
 
 const FAQSection = () => {
   const [openIndex, setOpenIndex] = useState(null);

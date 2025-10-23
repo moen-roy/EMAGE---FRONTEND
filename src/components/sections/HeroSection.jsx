@@ -1,7 +1,7 @@
 import React from 'react';
 // using external image instead of lucide Heart icon
-import StatCard from '../cards/StatCard';
-import MentalBro from '../../assets/mental health-bro.svg'; // Adjust the path as necessary
+// import StatCard from '../cards/StatCard';
+import MentalBro from '../../assets/Mental health-bro.svg';
 
 const HeroSection = () => {
   return (
