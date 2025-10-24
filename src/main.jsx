@@ -8,20 +8,19 @@ import FAQSection from './components/sections/FAQSection.jsx'
 import WhyChooseUs from './components/sections/WhyChooseUs.jsx'
 import ServiceSection from './components/sections/ServicesSection.jsx'
 import DiscoverSection from './components/sections/DiscoverSection.jsx'
+import Footer from './components/layout/Footer.jsx'
+import Header from './components/layout/Header.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <Header />
     <HeroSection />
     {/* <WhyChooseUs /> */}
     <DiscoverSection />
     <ServiceSection />
     <CaringSection />
       {/* <TestimonialsSection /> */}
-   
     {/* <FAQSection />   */}
-    
-    
-    
-
+    <Footer />
   </StrictMode>,
 )
