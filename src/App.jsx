@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { BrowserRouter, Routes, Route, Navigate, useNavigate } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import HeroSection from './components/sections/HeroSection';
@@ -66,31 +67,34 @@ function AppContent() {
   }, [navigate])
 
   return (
-    <Routes>
-      <Route path="/" element={(
-        <div className="min-h-screen bg-white">
-          <Header onSwitchToLogin={() => navigate('/login')} />
-          <HeroSection onSwitchToLogin={() => navigate('/login')} />
-          <WhyChooseUs />
-          <DiscoverSection />
-          <ServicesSection />
-          <CaringSection />
-          <SelfCareQuote />
-          <TestimonialsSection />
-          <PricingSection />
-          <FAQSection />
-          <NewsletterSection />
-          <ContactSection />
-          <Footer />
-        </div>
-      )} />
+    <>
+      <Routes>
+        <Route path="/" element={(
+          <div className="min-h-screen bg-white">
+            <Header onSwitchToLogin={() => navigate('/login')} />
+            <HeroSection onSwitchToLogin={() => navigate('/login')} />
+            <WhyChooseUs />
+            <DiscoverSection />
+            <ServicesSection />
+            <CaringSection />
+            <SelfCareQuote />
+            <TestimonialsSection />
+            <PricingSection />
+            <FAQSection />
+            <NewsletterSection />
+            <ContactSection />
+            <Footer />
+          </div>
+        )} />
 
-      <Route path="/login" element={<LoginPage onLogin={handleLogin} onSwitchToSignup={() => navigate('/signup')} />} />
-      <Route path="/signup" element={<SignupPage onSignup={handleSignup} onSwitchToLogin={() => navigate('/login')} />} />
-      <Route path="/pending" element={<PendingApproval onBackToLogin={() => navigate('/login')} />} />
-      <Route path="/dashboard" element={user ? <Dashboard user={user} token={token} onLogout={handleLogout} /> : <Navigate to="/login" replace />} />
-      <Route path="*" element={<Navigate to="/" replace />} />
-    </Routes>
+        <Route path="/login" element={<LoginPage onLogin={handleLogin} onSwitchToSignup={() => navigate('/signup')} />} />
+        <Route path="/signup" element={<SignupPage onSignup={handleSignup} onSwitchToLogin={() => navigate('/login')} />} />
+        <Route path="/pending" element={<PendingApproval onBackToLogin={() => navigate('/login')} />} />
+        <Route path="/dashboard" element={user ? <Dashboard user={user} token={token} onLogout={handleLogout} /> : <Navigate to="/login" replace />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+      <Analytics />
+    </>
   )
 }
 
